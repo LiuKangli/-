@@ -13,6 +13,7 @@
 		88169CA51CB262A600FD87E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88169CA31CB262A600FD87E3 /* Main.storyboard */; };
 		88169CA71CB262A600FD87E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88169CA61CB262A600FD87E3 /* Assets.xcassets */; };
 		88169CAA1CB262A600FD87E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88169CA81CB262A600FD87E3 /* LaunchScreen.storyboard */; };
+		88169CB31CB2634100FD87E3 /* UINavigationBar+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 88169CB21CB2634100FD87E3 /* UINavigationBar+category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		88169CA61CB262A600FD87E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88169CA91CB262A600FD87E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88169CAB1CB262A600FD87E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88169CB11CB2634100FD87E3 /* UINavigationBar+category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+category.h"; path = "../UINavigationBar+category.h"; sourceTree = "<group>"; };
+		88169CB21CB2634100FD87E3 /* UINavigationBar+category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+category.m"; path = "../UINavigationBar+category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				88169C9E1CB262A600FD87E3 /* AppDelegate.m */,
 				88169CA01CB262A600FD87E3 /* ViewController.h */,
 				88169CA11CB262A600FD87E3 /* ViewController.m */,
+				88169CB11CB2634100FD87E3 /* UINavigationBar+category.h */,
+				88169CB21CB2634100FD87E3 /* UINavigationBar+category.m */,
 				88169CA31CB262A600FD87E3 /* Main.storyboard */,
 				88169CA61CB262A600FD87E3 /* Assets.xcassets */,
 				88169CA81CB262A600FD87E3 /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88169CA21CB262A600FD87E3 /* ViewController.m in Sources */,
+				88169CB31CB2634100FD87E3 /* UINavigationBar+category.m in Sources */,
 				88169C9F1CB262A600FD87E3 /* AppDelegate.m in Sources */,
 				88169C9C1CB262A600FD87E3 /* main.m in Sources */,
 			);

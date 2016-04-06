@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UINavigationBar+category.h"
 @interface ViewController ()
 
 @end
@@ -16,12 +16,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+//只有继承UIScrollView的控件才能调用此方法
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    
+    //1。拿到y值
+   CGFloat contentOffY = scrollView.contentOffset.y;
+   
+    UIColor *color = [UIColor whiteColor];
+    
+    CGFloat alpah = (20 + 64 - contentOffY) / 64;
+     NSLog(@"%f  %f",contentOffY,alpah);
+    [self.navigationController.navigationBar alphaNavigationBarView:[color colorWithAlphaComponent:alpah]];
+//    if (contentOffY > 20) {
+//        [self.navigationController.navigationBar alphaNavigationBarView:[color colorWithAlphaComponent:alpah]];
+//    }else{
+//        [self.navigationController.navigationBar alphaNavigationBarView:[color colorWithAlphaComponent:1]];
+//    }
+    
+    
+}
 @end
